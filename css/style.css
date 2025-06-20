@@ -69,6 +69,26 @@ img {
   color: var(--quaternary-color);
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font: var(--ff);
+  font-weight: 600;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  background: var(--accent-color);
+  border: solid 2px var(--accent-color);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--quaternary-color);
+  color: var(--primary-color);
+  border: solid 2px var(--quaternary-color);
+  transform: scale(1.05);
+}
+
 .container-l {
   max-width: 1600px;
   margin: 0 auto;
@@ -110,7 +130,7 @@ img {
 .l-text {
   font-weight: 700;
   font-size: 1.7rem;
-  line-height: 1.2rem;
+  line-height: 2rem;
 }
 
 /* Nav */
@@ -187,7 +207,7 @@ img {
   gap: 20px;
 }
 
-.about .about-image{
+.about .about-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +247,20 @@ img {
 
 .pricing {
   background: var(--secondary-color);
+  display: flex;
+  justify-content: center;
   margin: 0px auto 20px;
+  padding: 3rem 0;
+}
+
+.pricing .pricing-card {
+  max-width: 15rem;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
 }
 
 /* Footer */
@@ -235,6 +268,11 @@ img {
 .footer {
   width: 80%;
   margin: 0px auto var(--spacing5);
+}
+
+.footer .footer-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .footer a {
@@ -245,6 +283,15 @@ img {
 
 .footer a:hover {
   color: var(--accent-color);
+}
+
+.footer i {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.footer i:hover {
+  scale: 1.2;
 }
 
 /* Media Queries */
