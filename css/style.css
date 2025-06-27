@@ -267,6 +267,7 @@ img {
 
 .pricing .pricing-card {
   width: 15rem;
+  height: fit-content;
   background: var(--primary-color);
   border-radius: 15px;
   padding: 20px;
@@ -306,3 +307,9 @@ img {
 }
 
 /* Media Queries */
+
+@media (max-width: 540px) {
+  .pricing .container {
+    flex-direction: column;
+  }
+}
