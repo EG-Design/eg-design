@@ -5,11 +5,13 @@
 }
 
 :root {
-  --accent-color: #efb11e;
-  --primary-color: #1e1e1e;
-  --secondary-color: #39393d;
-  --tertiary-color: #777780;
-  --quaternary-color: #fff;
+  --accent-color: hsl(42.2, 86.72%, 52.75%);
+  --primary-color: hsl(0, 0%, 4%);
+  --secondary-color: hsl(0, 0%, 8%);
+  --tertiary-color: hsl(0, 0%, 12%);
+  --quaternary-color: hsl(0, 0%, 60%);
+  --quinary-color: hsl(0, 0%, 100%);
+  ---color: hsl(0, 0%, 90%);
   --ff: "industry", sans-serif;
   --spacing1: 4px;
   --spacing2: 8px;
@@ -20,7 +22,7 @@
 
 body {
   background: var(--primary-color);
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
   margin: 0;
   font-size: 1rem;
   font-family: var(--ff);
@@ -69,6 +71,10 @@ img {
   color: var(--quaternary-color);
 }
 
+.quinary-color {
+  color: var(--quinary-color);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -83,9 +89,9 @@ img {
 }
 
 .btn:hover {
-  background: var(--quaternary-color);
+  background: var(--quinary-color);
   color: var(--primary-color);
-  border: solid 2px var(--quaternary-color);
+  border: solid 2px var(--quinary-color);
   transform: scale(1.05);
 }
 
@@ -96,7 +102,10 @@ img {
 }
 
 .container {
-  max-width: 1100px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  border: var(--tertiary-color) solid 2px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
@@ -147,7 +156,7 @@ img {
 }
 
 .navbar .logo svg:hover {
-  fill: var(--quaternary-color);
+  fill: var(--quinary-color);
   scale: 1.05;
 }
 
@@ -176,7 +185,7 @@ img {
 }
 
 .navbar ul li a:hover {
-  color: var(--quaternary-color);
+  color: var(--quinary-color);
 }
 
 /* Hero */
@@ -198,7 +207,6 @@ img {
 .about {
   margin: 0px auto 20px;
   padding: 0px;
-  background: var(--secondary-color);
 }
 
 .about .container {
@@ -246,18 +254,21 @@ img {
 /* Pricing */
 
 .pricing {
-  background: var(--secondary-color);
-  display: flex;
-  justify-content: center;
   margin: 0px auto 20px;
   padding: 3rem 0;
 }
 
+.pricing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .pricing .pricing-card {
-  max-width: 15rem;
+  width: 15rem;
   background: var(--primary-color);
-  color: var(--tertiary-color);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
   margin: 20px;
   text-align: center;
@@ -277,7 +288,7 @@ img {
 
 .footer a {
   text-decoration: none;
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
   transition: 0.3s;
 }
 
