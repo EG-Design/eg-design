@@ -269,6 +269,7 @@ img {
   width: 15rem;
   height: fit-content;
   background: var(--primary-color);
+  border: solid 2px var(--tertiary-color);
   border-radius: 15px;
   padding: 20px;
   margin: 20px;
@@ -278,7 +279,7 @@ img {
 /* Footer */
 
 .footer {
-  width: 80%;
+  max-width: 1200px;
   margin: 0px auto var(--spacing5);
 }
 
@@ -310,6 +311,9 @@ img {
 
 @media (max-width: 540px) {
   .pricing .container {
+    flex-direction: column;
+  }
+  .about .container {
     flex-direction: column;
   }
 }
