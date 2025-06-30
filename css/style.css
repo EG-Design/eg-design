@@ -42,9 +42,21 @@ img {
     Utility
     Text
     Nav
-    Hero
-    About
-    Pricing
+    INDEX
+     Hero
+     About
+     Pricing
+    ABOUT
+     Experience
+     Story
+     Passion
+    SERVICES
+     Graphic Design
+     Web Design
+     Contact
+    PORTFOLIO
+     Projects
+     Example Work
     Footer
     Media Queries
 */
@@ -269,7 +281,7 @@ img {
   width: 15rem;
   height: fit-content;
   background: var(--primary-color);
-  border: solid 2px var(--tertiary-color);
+  border: solid 1px var(--accent-color);
   border-radius: 15px;
   padding: 20px;
   margin: 20px;
