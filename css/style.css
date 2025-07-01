@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 :root {
   --accent-color: hsl(42.2, 86.72%, 52.75%);
   --primary-color: hsl(0, 0%, 4%);
@@ -11,7 +15,12 @@
   --tertiary-color: hsl(0, 0%, 12%);
   --quaternary-color: hsl(0, 0%, 60%);
   --quinary-color: hsl(0, 0%, 100%);
-  ---color: hsl(0, 0%, 90%);
+  /* --accent-color: #5f54a3; 
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(0, 0%, 90%);
+  --tertiary-color: hsl(0, 0%, 80%);
+  --quaternary-color: hsl(0, 0%, 30%);
+  --quinary-color: hsl(0, 0%, 4%); */
   --ff: "industry", sans-serif;
   --spacing1: 4px;
   --spacing2: 8px;
@@ -23,10 +32,9 @@
 body {
   background: var(--primary-color);
   color: var(--quaternary-color);
-  margin: 0;
   font-size: 1rem;
   font-family: var(--ff);
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -200,6 +208,7 @@ img {
   color: var(--quinary-color);
 }
 
+/*** INDEX ***/
 /* Hero */
 
 .hero {
@@ -288,6 +297,20 @@ img {
   text-align: center;
 }
 
+/*** ABOUT ***/
+/* Experience */
+/* Story */
+/* Passion */
+
+/*** SERVICES ***/
+/* Graphic Design */
+/* Web Design */
+/* Contact */
+
+/*** PORTFOLIO ***/
+/* Projects */
+/* Example Work */
+
 /* Footer */
 
 .footer {
@@ -310,7 +333,7 @@ img {
 
 .footer .footer-links ul li:first-child {
   border-bottom: 1px var(--quaternary-color) solid;
-  width: fit-content;
+  width: 7rem;
   margin: 0 0 0.3rem;
 }
 
