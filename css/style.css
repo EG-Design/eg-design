@@ -295,11 +295,17 @@ img {
   margin: 0px auto;
 }
 
+.footer .footer-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer .footer-links {
+  max-width: 800px;
   display: grid;
-  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 1.8fr;
+  grid-template-columns: repeat(4, 1fr);
   padding: 0 0.5rem;
-  gap: 0rem;
+  gap: 4rem;
 }
 
 .footer .footer-links ul li:first-child {
@@ -319,6 +325,7 @@ img {
 }
 
 .footer .footer-icons i {
+  max-width: 400px;
   float: right;
   padding: 0 0.5rem;
   font-size: 2rem;
