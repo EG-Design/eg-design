@@ -131,6 +131,10 @@ img {
   padding: 0;
 }
 
+section {
+  padding: 0 0 3rem 0;
+}
+
 .container-sm {
   max-width: 800px;
   margin: 0 auto;
@@ -228,7 +232,6 @@ img {
 
 .about {
   margin: 0px auto 20px;
-  padding: 0px;
 }
 
 .about .container {
@@ -277,7 +280,6 @@ img {
 
 .pricing {
   margin: 0px auto 20px;
-  padding: 3rem 0;
 }
 
 .pricing .container {
